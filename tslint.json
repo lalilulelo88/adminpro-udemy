@@ -88,5 +88,8 @@
   },
   "rulesDirectory": [
     "codelyzer"
-  ]
+  ],
+  "no-trailing-whitespace": false,
+  "prefer-const": false
+
 }

@@ -12,10 +12,10 @@
                             src="../assets/images/users/profile.png" alt="user" /><span class="hide-menu">Steave Jobs
                         </span></a>
                     <ul aria-expanded="false" class="collapse">
-                        <li><a [routerLink]="['/routePath']" routerLinkActive="router-link-active">My Profile </a></li>
-                        <li><a [routerLink]="['/routePath']" routerLinkActive="router-link-active">My Balance</a></li>
-                        <li><a [routerLink]="['/routePath']" routerLinkActive="router-link-active">Inbox</a></li>
-                        <li><a [routerLink]="['/account-settings']" routerLinkActive="router-link-active">Account Setting</a></li>
+                        <li><a [routerLink]="['/routePath']" routerLinkActive="active">My Profile </a></li>
+                        <li><a [routerLink]="['/routePath']" routerLinkActive="active">My Balance</a></li>
+                        <li><a [routerLink]="['/routePath']" routerLinkActive="active">Inbox</a></li>
+                        <li><a [routerLink]="['/account-settings']" routerLinkActive="active">Account Setting</a></li>
                         <li><a [routerLink]="['/login']" >Logout</a></li>
                     </ul>
                 </li>
@@ -26,7 +26,7 @@
                             [class]="menu.icono"></i><span class="hide-menu">{{menu.titulo}} <span
                                 class="label label-rouded label-themecolor pull-right">{{menu.submenu.length}}</span></span></a>
                     <ul aria-expanded="false" class="collapse">
-                        <li *ngFor="let submenu of menu.submenu"><a [routerLink]="[submenu.url]" routerLinkActive="router-link-active" >{{submenu.titulo}} </a></li>
+                        <li *ngFor="let submenu of menu.submenu"><a [routerLink]="[submenu.url]" routerLinkActive="active" >{{submenu.titulo}} </a></li>
                         
                     </ul>
                 </li>
