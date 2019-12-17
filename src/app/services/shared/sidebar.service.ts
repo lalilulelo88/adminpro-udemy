@@ -18,7 +18,17 @@ export class SidebarService {
       {titulo: 'Ajustes', url: '/account-settings'}
 
     ]
-    }
+    },
+    {
+      titulo: 'Mantenimiento',
+      icono: 'mdi mdi-wrench',
+      submenu: [
+        {titulo: 'Usuarios', url: '/usuarios'},
+        {titulo: 'Hospitales', url: '/hospitales'},
+        {titulo: 'Medicos', url: '/medicos'}
+  
+      ]
+      }
   ];
   constructor() { }
 }
